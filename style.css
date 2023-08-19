@@ -1,0 +1,116 @@
+:root {
+  --Griffy: "Griffy", cursive;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background-color: #000;
+}
+
+nav {
+  height: 93px;
+  flex-shrink: 0;
+  background: linear-gradient(156deg, rgba(0, 0, 0, 0.75) 0%, rgba(102, 80, 165, 0.75) 100%);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+  position: sticky;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+h1 {
+  color: #FFC907;
+  font-family: var(--Griffy);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 20px;
+}
+
+li {
+  color: #A1B1CB;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  align-items: center;
+}
+
+button {
+  border-radius: 30px;
+  height: 50px;
+}
+
+input {
+  border-radius: 18.5px;
+  background: #3B567D;
+  width: 324px;
+  height: 37px;
+  flex-shrink: 0;
+}
+
+.side-bar {
+  width: 75px;
+  height: 315px;
+  flex-shrink: 0;
+  border-radius: 0 26px 26px 0;
+  background: linear-gradient(48deg, #130B29 0%, #5436A9 100%, #5E47A1 100%);
+  position: sticky;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-right: 40px;
+}
+
+main {
+  margin-left: 120px;
+  margin-right: 80px;
+}
+
+section .hero-section {
+  background-image: url(/public/images/movie-wallpaper.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 907px;
+}
+
+footer {
+  font-family: "Roboto", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-even {
+  justify-content: space-evenly;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-grow-2 {
+  flex-grow: 1;
+}
+
+.flex-grow-3 {
+  flex-grow: 1;
+}
+
+/*# sourceMappingURL=style.css.map */

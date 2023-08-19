@@ -6,7 +6,12 @@
     <title>Dramatic Movie site</title>
 
     <!-- stylesheet -->
+    <link rel="stylesheet" href="/reset.css">
     <link rel="stylesheet" href="/style.css">
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -17,27 +22,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Mukta+Mahee:wght@200;300;400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Griffy&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
 </head>
+
+
 <body>
-    <nav>
-        <h1>dramatic</h1>
-        <ul>
-            <li>Home</li>
+    <nav class="flex justify-around align-center sticky">
+        <h1 class="flex-grow-2">dramatic</h1>
+        <ul class="flex justify-between flex-grow-3 align-center">
+            <li class="on-page">Home</li>
             <li>tv show</li>
             <li>movies</li>
             <li>news</li>
         </ul>
-        <input type="text" placeholder="SEARCH">
-        <input type="submit">
-        <a href=""><img src="./public/images/gift-1.svg" alt=""></a>
-        <a href=""><img src="./public/images/bell-1.svg" alt=""></a>
-        <a href=""><img src="./public/images/ellipse-1.png" alt=""></a>
+        <form action="" class="flex">
+            <input class="" type="text" placeholder="SEARCH">
+            <input class="" type="submit">
+        </form>
+        <div class="nav-icons flex flex-grow-1 justify-around align-center">
+            <a class="" href=""><img src="./public/images/gift-1.svg" alt=""></a>
+            <a class="flex-grow-1" href=""><img src="./public/images/bell-1.svg" alt=""></a>
+            <a class="flex-grow-1" href=""><img src="./public/images/ellipse-1.png" alt=""></a>
+        </div>
+
     </nav>
 
 
-    <div class="side-bar">
+    <div class="side-bar flex justify-around align-center">
         <a href=""><img src="./public/images/users-1.svg" alt=""></a>
         <a href=""><img src="./public/images/list-11.svg" alt=""></a>
         <a href=""><img src="./public/images/download-11.svg" alt=""></a>
@@ -46,385 +58,388 @@
     </div>
 
 
-
-    <section class="hero-section">
-        <h2 class="movie-title">Tamasha</h2>
-        <p class="movie-description">
-            Ved and Tara fall in love while on a holiday in Corsica and decide to keep their real identities undisclosed. Tara
-            returns to Delhi and meets a new Ved, who is trying to discover his true self.
-        </p>
-        <p class="genres-title">genres</p>
-        <p class="genres">Romance, Drama</p>
-        <div class="hero-buttons">
-            <button>watch</button>
-            <button>my list</button>
-        </div>
-        <div class="hero-features">
-            <img src="./public/images/IMDb.png" alt="">
-            <p class="IMDb-rating">7.3</p>
-            <p class="age-rating">U/A</p>
-            <p class="resolution">4K</p>
-            <p class="year">2015</p>
-        </div>
+    <main>
+        <section class="hero-section">
+            <img class="movie-title" src="./public/images/Tamasha.png" alt="Tamash title">
+            <p class="movie-description">
+                Ved and Tara fall in love while on a holiday in Corsica and decide to keep their real identities undisclosed.
+                Tara
+                returns to Delhi and meets a new Ved, who is trying to discover his true self.
+            </p>
+            <p class="genres-title">genres</p>
+            <p class="genres">Romance, Drama</p>
+            <div class="hero-buttons flex">
+                <button>watch</button>
+                <button>my list</button>
+            </div>
+            <div class="hero-features flex">
+                <img src="./public/images/IMDb.png" alt="">
+                <p class="IMDb-rating">7.3</p>
+                <p class="age-rating">U/A</p>
+                <p class="resolution">4K</p>
+                <p class="year">2015</p>
+            </div>
         
-    </section>
-
-
-    <section class="must-watch">
-        <div>
-            <h3>Movies you must watch</h3>
-            <button>filters <i></i></button>
-        </div>
-
-        <div class="movie-list">
-            <div class="movie-card">
-                <img src="./public/images/Movies/Kumbalangi-Nights.png" alt="">
-                <p class="card-year">2019</p>
-                <div>
-                    <div>
-                        <img class="card-imdb" src="./public/images/IMDb.png" alt="">
-                        <p class="card-imdb-rating"></p>
-                    </div>
-                    <div>
-                        <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
-                        <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+        </section>
+        
+        
+        <section class="must-watch">
+            <div class="flex">
+                <h3>Movies you must watch</h3>
+                <button>filters <i></i></button>
+            </div>
+        
+            <div class="movie-list flex align-center justify-between">
+                <div class="movie-card">
+                    <img src="./public/images/Movies/Kumbalangi-Nights.png" alt="">
+                    <p class="card-year">2019</p>
+                    <div class="flex justify-between">
+                        <div class="flex">
+                            <img class="card-imdb" src="./public/images/IMDb.png" alt="">
+                            <p class="card-imdb-rating">8.6</p>
+                        </div>
+                        <div class="flex">
+                            <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
+                            <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="movie-card">
-                <img src="./public/images/Movies/The-Lunchbox.png" alt="">
-                <p class="card-year">2019</p>
-                <div>
+        
+                <div class="movie-card">
+                    <img src="./public/images/Movies/The-Lunchbox.png" alt="">
+                    <p class="card-year">2019</p>
                     <div>
-                        <img class="card-imdb" src="./public/images/IMDb.png" alt="">
-                        <p class="card-imdb-rating"></p>
-                    </div>
-                    <div>
-                        <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
-                        <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="movie-card">
-                <img src="./public/images/Movies/Haider.png" alt="">
-                <p class="card-year">2019</p>
-                <div>
-                    <div>
-                        <img class="card-imdb" src="./public/images/IMDb.png" alt="">
-                        <p class="card-imdb-rating"></p>
-                    </div>
-                    <div>
-                        <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
-                        <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        <div>
+                            <img class="card-imdb" src="./public/images/IMDb.png" alt="">
+                            <p class="card-imdb-rating"></p>
+                        </div>
+                        <div>
+                            <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
+                            <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="movie-card">
-                <img src="./public/images/Movies/Aamis.png" alt="">
-                <p class="card-year">2019</p>
-                <div>
+        
+                <div class="movie-card">
+                    <img src="./public/images/Movies/Haider.png" alt="">
+                    <p class="card-year">2019</p>
                     <div>
-                        <img class="card-imdb" src="./public/images/IMDb.png" alt="">
-                        <p class="card-imdb-rating"></p>
-                    </div>
-                    <div>
-                        <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
-                        <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="movie-card">
-                <img src="./public/images/Movies/Court.png" alt="">
-                <p class="card-year">2019</p>
-                <div>
-                    <div>
-                        <img class="card-imdb" src="./public/images/IMDb.png" alt="">
-                        <p class="card-imdb-rating"></p>
-                    </div>
-                    <div>
-                        <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
-                        <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        <div>
+                            <img class="card-imdb" src="./public/images/IMDb.png" alt="">
+                            <p class="card-imdb-rating"></p>
+                        </div>
+                        <div>
+                            <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
+                            <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="movie-card">
-                <img src="./public/images/Movies/Masaan.png" alt="">
-                <p class="card-year">2019</p>
-                <div>
+        
+                <div class="movie-card">
+                    <img src="./public/images/Movies/Aamis.png" alt="">
+                    <p class="card-year">2019</p>
                     <div>
-                        <img class="card-imdb" src="./public/images/IMDb.png" alt="">
-                        <p class="card-imdb-rating"></p>
-                    </div>
-                    <div>
-                        <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
-                        <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="movie-card">
-                <img src="./public/images/Movies/Kai-Po-Che.png" alt="">
-                <p class="card-year">2019</p>
-                <div>
-                    <div>
-                        <img class="card-imdb" src="./public/images/IMDb.png" alt="">
-                        <p class="card-imdb-rating"></p>
-                    </div>
-                    <div>
-                        <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
-                        <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        <div>
+                            <img class="card-imdb" src="./public/images/IMDb.png" alt="">
+                            <p class="card-imdb-rating"></p>
+                        </div>
+                        <div>
+                            <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
+                            <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <section class="recommended">
-        <p>recomended for you</p>
-        <div>
-            <button>hindi</button>
-            <button>bengali</button>
-            <button>marathi</button>
-            <button>assamese</button>
-            <button>telugu</button>
-            <button>tamil</button>
-            <button>malayalam</button>
-        </div>
-
-        <div class="movie-list">
-            <div class="movie-card">
-                <img src="./public/images/Movies/96.png" alt="">
-                <p class="card-year">2019</p>
-                <div>
+        
+                <div class="movie-card">
+                    <img src="./public/images/Movies/Court.png" alt="">
+                    <p class="card-year">2019</p>
                     <div>
-                        <img class="card-imdb" src="./public/images/IMDb.png" alt="">
-                        <p class="card-imdb-rating"></p>
-                    </div>
-                    <div>
-                        <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
-                        <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        <div>
+                            <img class="card-imdb" src="./public/images/IMDb.png" alt="">
+                            <p class="card-imdb-rating"></p>
+                        </div>
+                        <div>
+                            <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
+                            <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="movie-card">
-                <img src="./public/images/Movies/Swades.png" alt="">
-                <p class="card-year">2019</p>
-                <div>
+        
+                <div class="movie-card">
+                    <img src="./public/images/Movies/Masaan.png" alt="">
+                    <p class="card-year">2019</p>
                     <div>
-                        <img class="card-imdb" src="./public/images/IMDb.png" alt="">
-                        <p class="card-imdb-rating"></p>
-                    </div>
-                    <div>
-                        <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
-                        <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="movie-card">
-                <img src="./public/images/Movies/Andhadhun.png" alt="">
-                <p class="card-year">2019</p>
-                <div>
-                    <div>
-                        <img class="card-imdb" src="./public/images/IMDb.png" alt="">
-                        <p class="card-imdb-rating"></p>
-                    </div>
-                    <div>
-                        <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
-                        <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        <div>
+                            <img class="card-imdb" src="./public/images/IMDb.png" alt="">
+                            <p class="card-imdb-rating"></p>
+                        </div>
+                        <div>
+                            <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
+                            <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
+        
+                <!-- <div class="movie-card">
+                        <img src="./public/images/Movies/Kai-Po-Che.png" alt="">
+                        <p class="card-year">2019</p>
+                        <div>
+                            <div>
+                                <img class="card-imdb" src="./public/images/IMDb.png" alt="">
+                                <p class="card-imdb-rating"></p>
+                            </div>
+                            <div>
+                                <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
+                                <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div> -->
+        
             </div>
-
-            <div class="movie-card">
-                <img src="./public/images/Movies/Sarpatta-Paramba....png" alt="">
-                <p class="card-year">2019</p>
-                <div>
+        
+        </section>
+        
+        
+        
+        <section class="recommended">
+            <p>recomended for you</p>
+            <div class="flex">
+                <button>hindi</button>
+                <button>bengali</button>
+                <button>marathi</button>
+                <button>assamese</button>
+                <button>telugu</button>
+                <button>tamil</button>
+                <button>malayalam</button>
+            </div>
+        
+            <div class="movie-list flex">
+                <div class="movie-card">
+                    <img src="./public/images/Movies/96.png" alt="">
+                    <p class="card-year">2019</p>
                     <div>
-                        <img class="card-imdb" src="./public/images/IMDb.png" alt="">
-                        <p class="card-imdb-rating"></p>
-                    </div>
-                    <div>
-                        <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
-                        <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        <div>
+                            <img class="card-imdb" src="./public/images/IMDb.png" alt="">
+                            <p class="card-imdb-rating"></p>
+                        </div>
+                        <div>
+                            <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
+                            <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="movie-card">
-                <img src="./public/images/Movies/Piku.png" alt="">
-                <p class="card-year">2019</p>
-                <div>
+        
+                <div class="movie-card">
+                    <img src="./public/images/Movies/Swades.png" alt="">
+                    <p class="card-year">2019</p>
                     <div>
-                        <img class="card-imdb" src="./public/images/IMDb.png" alt="">
-                        <p class="card-imdb-rating"></p>
-                    </div>
-                    <div>
-                        <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
-                        <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="movie-card">`
-                <img src="./public/images/Movies/Hotel-Mumbai.png" alt="">
-                <p class="card-year">2019</p>
-                <div>
-                    <div>
-                        <img class="card-imdb" src="./public/images/IMDb.png" alt="">
-                        <p class="card-imdb-rating"></p>
-                    </div>
-                    <div>
-                        <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
-                        <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        <div>
+                            <img class="card-imdb" src="./public/images/IMDb.png" alt="">
+                            <p class="card-imdb-rating"></p>
+                        </div>
+                        <div>
+                            <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
+                            <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="movie-card">
-                <img src="./public/images/Movies/Kai-Po-Che.png" alt="">
-                <p class="card-year">2019</p>
-                <div>
+        
+                <div class="movie-card">
+                    <img src="./public/images/Movies/Andhadhun.png" alt="">
+                    <p class="card-year">2019</p>
                     <div>
-                        <img class="card-imdb" src="./public/images/IMDb.png" alt="">
-                        <p class="card-imdb-rating"></p>
-                    </div>
-                    <div>
-                        <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
-                        <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <p>bollywood classics</p>
-
-        <div class="movie-list">
-            <div class="movie-card">
-                <img src="./public/images/Movies/Dil-Chahta-Hai.png" alt="">
-                <p class="card-year">2019</p>
-                <div>
-                    <div>
-                        <img class="card-imdb" src="./public/images/IMDb.png" alt="">
-                        <p class="card-imdb-rating"></p>
-                    </div>
-                    <div>
-                        <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
-                        <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        <div>
+                            <img class="card-imdb" src="./public/images/IMDb.png" alt="">
+                            <p class="card-imdb-rating"></p>
+                        </div>
+                        <div>
+                            <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
+                            <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="movie-card">
-                <img src="./public/images/Movies/3-idiots.png" alt="">
-                <p class="card-year">2019</p>
-                <div>
+        
+                <div class="movie-card">
+                    <img src="./public/images/Movies/Sarpatta-Paramba....png" alt="">
+                    <p class="card-year">2019</p>
                     <div>
-                        <img class="card-imdb" src="./public/images/IMDb.png" alt="">
-                        <p class="card-imdb-rating"></p>
-                    </div>
-                    <div>
-                        <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
-                        <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="movie-card">
-                <img src="./public/images/Movies/Rockstar.png" alt="">
-                <p class="card-year">2019</p>
-                <div>
-                    <div>
-                        <img class="card-imdb" src="./public/images/IMDb.png" alt="">
-                        <p class="card-imdb-rating"></p>
-                    </div>
-                    <div>
-                        <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
-                        <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        <div>
+                            <img class="card-imdb" src="./public/images/IMDb.png" alt="">
+                            <p class="card-imdb-rating"></p>
+                        </div>
+                        <div>
+                            <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
+                            <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="movie-card">
-                <img src="./public/images/Movies/Jaane-Tu...-Ya-Jaa....png" alt="">
-                <p class="card-year">2019</p>
-                <div>
+        
+                <div class="movie-card">
+                    <img src="./public/images/Movies/Piku.png" alt="">
+                    <p class="card-year">2019</p>
                     <div>
-                        <img class="card-imdb" src="./public/images/IMDb.png" alt="">
-                        <p class="card-imdb-rating"></p>
-                    </div>
-                    <div>
-                        <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
-                        <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="movie-card">
-                <img src="./public/images/Movies/Dilwale-Dulhaniya....png" alt="">
-                <p class="card-year">2019</p>
-                <div>
-                    <div>
-                        <img class="card-imdb" src="./public/images/IMDb.png" alt="">
-                        <p class="card-imdb-rating"></p>
-                    </div>
-                    <div>
-                        <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
-                        <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        <div>
+                            <img class="card-imdb" src="./public/images/IMDb.png" alt="">
+                            <p class="card-imdb-rating"></p>
+                        </div>
+                        <div>
+                            <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
+                            <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="movie-card">
-                <img src="./public/images/Movies/My-Name-is-Khan.png" alt="">
-                <p class="card-year">2019</p>
-                <div>
+        
+                <div class="movie-card">`
+                    <img src="./public/images/Movies/Hotel-Mumbai.png" alt="">
+                    <p class="card-year">2019</p>
                     <div>
-                        <img class="card-imdb" src="./public/images/IMDb.png" alt="">
-                        <p class="card-imdb-rating"></p>
-                    </div>
-                    <div>
-                        <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
-                        <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="movie-card">
-                <img src="./public/images/Movies/Kai-Po-Che.png" alt="">
-                <p class="card-year">2019</p>
-                <div>
-                    <div>
-                        <img class="card-imdb" src="./public/images/IMDb.png" alt="">
-                        <p class="card-imdb-rating"></p>
-                    </div>
-                    <div>
-                        <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
-                        <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        <div>
+                            <img class="card-imdb" src="./public/images/IMDb.png" alt="">
+                            <p class="card-imdb-rating"></p>
+                        </div>
+                        <div>
+                            <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
+                            <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
+        
+                <!-- <div class="movie-card">
+                        <img src="./public/images/Movies/Kai-Po-Che.png" alt="">
+                        <p class="card-year">2019</p>
+                        <div>
+                            <div>
+                                <img class="card-imdb" src="./public/images/IMDb.png" alt="">
+                                <p class="card-imdb-rating"></p>
+                            </div>
+                            <div>
+                                <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
+                                <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div> -->
+        
             </div>
-
-        </div>
-
-        <button>show more</button>
-    </section>
+        
+            <p>bollywood classics</p>
+        
+            <div class="movie-list flex">
+                <div class="movie-card">
+                    <img src="./public/images/Movies/Dil-Chahta-Hai.png" alt="">
+                    <p class="card-year">2019</p>
+                    <div>
+                        <div>
+                            <img class="card-imdb" src="./public/images/IMDb.png" alt="">
+                            <p class="card-imdb-rating"></p>
+                        </div>
+                        <div>
+                            <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
+                            <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="movie-card">
+                    <img src="./public/images/Movies/3-idiots.png" alt="">
+                    <p class="card-year">2019</p>
+                    <div>
+                        <div>
+                            <img class="card-imdb" src="./public/images/IMDb.png" alt="">
+                            <p class="card-imdb-rating"></p>
+                        </div>
+                        <div>
+                            <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
+                            <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="movie-card">
+                    <img src="./public/images/Movies/Rockstar.png" alt="">
+                    <p class="card-year">2019</p>
+                    <div>
+                        <div>
+                            <img class="card-imdb" src="./public/images/IMDb.png" alt="">
+                            <p class="card-imdb-rating"></p>
+                        </div>
+                        <div>
+                            <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
+                            <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="movie-card">
+                    <img src="./public/images/Movies/Jaane-Tu...-Ya-Jaa....png" alt="">
+                    <p class="card-year">2019</p>
+                    <div>
+                        <div>
+                            <img class="card-imdb" src="./public/images/IMDb.png" alt="">
+                            <p class="card-imdb-rating"></p>
+                        </div>
+                        <div>
+                            <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
+                            <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="movie-card">
+                    <img src="./public/images/Movies/Dilwale-Dulhaniya....png" alt="">
+                    <p class="card-year">2019</p>
+                    <div>
+                        <div>
+                            <img class="card-imdb" src="./public/images/IMDb.png" alt="">
+                            <p class="card-imdb-rating"></p>
+                        </div>
+                        <div>
+                            <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
+                            <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="movie-card">
+                    <img src="./public/images/Movies/My-Name-is-Khan.png" alt="">
+                    <p class="card-year">2019</p>
+                    <div>
+                        <div>
+                            <img class="card-imdb" src="./public/images/IMDb.png" alt="">
+                            <p class="card-imdb-rating"></p>
+                        </div>
+                        <div>
+                            <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
+                            <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- <div class="movie-card">
+                        <img src="./public/images/Movies/Kai-Po-Che.png" alt="">
+                        <p class="card-year">2019</p>
+                        <div>
+                            <div>
+                                <img class="card-imdb" src="./public/images/IMDb.png" alt="">
+                                <p class="card-imdb-rating"></p>
+                            </div>
+                            <div>
+                                <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
+                                <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div> -->
+        
+            </div>
+        
+            <button>show more</button>
+        </section>
+    </main>
+    
     
 
 
     <footer>
-        <div>
+        <div class="flex">
             <div class="language">
                 <button><i></i> English <i></i></button>
             </div>
