@@ -8,6 +8,7 @@ body {
     // width: 1440px;
     color: white;
     background-color: #000;
+    // background-color: blue;
 }
 
 nav {
@@ -84,6 +85,8 @@ input {
 button {
     border-radius: 30px;
     height: 50px;
+    text-transform: uppercase;
+    border: none;
 }
 
 input:focus {
@@ -112,21 +115,37 @@ main {
     margin-right: 80px;
 }
 
-section .hero-section {
-    background-image: url(./public/images/movie-wallpaper.png);
+.hero-section {
+    background: linear-gradient(90deg, #000 17.76%, rgba(0, 0, 0, 0.69) 41.44%, rgba(196, 196, 196, 0.00) 100%) ;
+    background-image: url(./public/images/Tamasha-main.png);
+    // background: linear-gradient(90deg, #000 17.76%, rgba(0, 0, 0, 0.69) 41.44%, rgba(196, 196, 196, 0.00) 100%);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    background-blend-mode: multiply;
+    background-position: right;
+    background-blend-mode:multiply;
     height: 900px;
-    background: linear-gradient(90deg, #000 17.76%, rgba(0, 0, 0, 0.69) 41.44%, rgba(196, 196, 196, 0.00) 100%);
+    // width: 100%;
+    // background: linear-gradient(blue, red, white);
 }
 
-
+.float {
+    display: float;
+}
 
 footer {
     font-family: 'Roboto', sans-serif;
 }
+
+// .fa-solid, .fa-regular{
+//     font-size: 24px;
+//     color: #BCA5FF;
+// }
+
+// .nav-icons .fa-solid,
+// .nav-icons .fa-regular {
+//     font-size: 24px;
+//     color: white;
+// }
 
 
 .flex {

@@ -14,9 +14,14 @@
 
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+        integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous"> -->
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,36 +83,45 @@
     <!-- <i class="fa-brands fa-linkedin-in"></i> -->
     <!-- <i class="fa-brands fa-twitter"></i> -->
 
+    <header>
+        <nav class="flex justify-around align-center sticky">
+            <h1 class="flex-grow-2">dramatic</h1>
+            <ul class="flex justify-between flex-grow-3 align-center">
+                <li class="on-page">Home</li>
+                <li><a href="">tv show</a></li>
+                <li><a href="">movies</a></li>
+                <li><a href="">news</a></li>
+            </ul>
+            <form action="" class="flex align-center">
+                <input class="flex-grow-2" type="text" placeholder="SEARCH">
+                <button title="search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <!-- <input class="fa fa-search" type="submit"> -->
+            </form>
+            <div class="nav-icons flex flex-grow-1 justify-around align-center">
+                <!-- <a class="flex-grow-1" href=""><img src="./public/images/gift-1.svg" alt=""></a> -->
+                <a class="flex-grow-1" href=""><i class="fa-solid fa-gift nav-icons"></i></a>
+                <!-- <a class="flex-grow-1" href=""><img src="./public/images/bell-1.svg" alt=""></a> -->
+                <a class="flex-grow-1" href=""><i class="fa-regular fa-bell nav-icons"></i></a>
+                <!-- <a class="flex-grow-1" href=""><img src="./public/images/ellipse-1.png" alt=""></a> -->
+                <a class="flex-grow-1" href=""><img src="./public/images/ellipse-1.png" alt=""></a>
+            </div>
+        
+        </nav>
+    </header>
 
-    <nav class="flex justify-around align-center sticky">
-        <h1 class="flex-grow-2">dramatic</h1>
-        <ul class="flex justify-between flex-grow-3 align-center">
-            <li class="on-page">Home</li>
-            <li><a href="">tv show</a></li>
-            <li><a href="">movies</a></li>
-            <li><a href="">news</a></li>
-        </ul>
-        <form action="" class="flex">
-            <input class="flex-grow-2" type="text" placeholder="SEARCH">
-            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-            <!-- <input class="fa fa-search" type="submit"> -->
-        </form>
-        <div class="nav-icons flex flex-grow-1 justify-around align-center">
-            <a class="flex-grow-1" href=""><img src="./public/images/gift-1.svg" alt=""></a>
-            <a class="flex-grow-1" href=""><img src="./public/images/bell-1.svg" alt=""></a>
-            <a class="flex-grow-1" href=""><img src="./public/images/ellipse-1.png" alt=""></a>
-        </div>
-
-    </nav>
 
 
     <div class="side-bar flex justify-around align-center">
-        <a href=""><img src="./public/images/users-1.svg" alt=""></a>
-        <a href=""><img src="./public/images/list-11.svg" alt=""></a>
-        <a href=""><img src="./public/images/download-11.svg" alt=""></a>
-        <a href=""><img src="./public/images/settings-1.svg" alt=""></a>
-
+        <!-- <a href=""><img src="./public/images/users-1.svg" alt=""></a> -->
+        <a href=""><i class="fa-solid fa-user-group"></i></a>
+        <!-- <a href=""><img src="./public/images/list-11.svg" alt=""></a> -->
+        <a href=""><i class="fa-solid fa-list-ul"></i></a>
+        <!-- <a href=""><img src="./public/images/download-11.svg" alt=""></a> -->
+        <a href=""><i class="fa-solid fa-download"></i></a>
+        <!-- <a href=""><img src="./public/images/settings-1.svg" alt=""></a> -->
+        <a href=""><i class="fa-solid fa-gear"></i></a>
     </div>
+
 
 
     <main>
@@ -121,13 +135,13 @@
             <p class="genres-title">genres</p>
             <p class="genres">Romance, Drama</p>
             <div class="hero-buttons flex">
-                <button>watch</button>
-                <button>my list</button>
+                <button>watch <i class="fa-solid fa-play"></i></button>
+                <button>my list <i class="fa-solid fa-plus"></i></button>
             </div>
             <div class="hero-features flex">
                 <img src="./public/images/IMDb.png" alt="">
-                <p class="IMDb-rating">7.3</p>
-                <p class="age-rating">U/A</p>
+                <p class="main-IMDb-score">7.3</p>
+                <p class="main-age-rating">U/A</p>
                 <p class="resolution">4K</p>
                 <p class="year">2015</p>
             </div>
@@ -136,9 +150,9 @@
         
         
         <section class="must-watch">
-            <div class="flex">
+            <div class="flex justify-between">
                 <h3>Movies you must watch</h3>
-                <button>filters <i></i></button>
+                <button>filters <i class="fa-solid fa-angle-down"></i></button>
             </div>
         
             <div class="movie-list flex align-center justify-between">
@@ -152,8 +166,10 @@
                             <p class="card-imdb-rating">8.6</p>
                         </div>
                         <div class="flex">
-                            <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
-                            <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                            <!-- <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a> -->
+                            <a class="card-views" href=""><i class="fa-regular fa-eye"></i></a>
+                            <!-- <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a> -->
+                            <a class="card-heart" href=""><i class="fa-solid fa-heart"></i></a>
                         </div>
                     </div>
                 </div>
@@ -234,19 +250,19 @@
                 </div>
         
                 <!-- <div class="movie-card">
-                        <img src="./public/images/Movies/Kai-Po-Che.png" alt="">
-                        <p class="card-year">2019</p>
-                        <div>
+                            <img src="./public/images/Movies/Kai-Po-Che.png" alt="">
+                            <p class="card-year">2019</p>
                             <div>
-                                <img class="card-imdb" src="./public/images/IMDb.png" alt="">
-                                <p class="card-imdb-rating"></p>
+                                <div>
+                                    <img class="card-imdb" src="./public/images/IMDb.png" alt="">
+                                    <p class="card-imdb-rating"></p>
+                                </div>
+                                <div>
+                                    <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
+                                    <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                                </div>
                             </div>
-                            <div>
-                                <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
-                                <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
-                            </div>
-                        </div>
-                    </div> -->
+                        </div> -->
         
             </div>
         
@@ -256,7 +272,7 @@
         
         <section class="recommended">
             <p>recomended for you</p>
-            <div class="flex">
+            <div class="flex justify-between">
                 <button>hindi</button>
                 <button>bengali</button>
                 <button>marathi</button>
@@ -358,19 +374,19 @@
                 </div>
         
                 <!-- <div class="movie-card">
-                        <img src="./public/images/Movies/Kai-Po-Che.png" alt="">
-                        <p class="card-year">2019</p>
-                        <div>
+                            <img src="./public/images/Movies/Kai-Po-Che.png" alt="">
+                            <p class="card-year">2019</p>
                             <div>
-                                <img class="card-imdb" src="./public/images/IMDb.png" alt="">
-                                <p class="card-imdb-rating"></p>
+                                <div>
+                                    <img class="card-imdb" src="./public/images/IMDb.png" alt="">
+                                    <p class="card-imdb-rating"></p>
+                                </div>
+                                <div>
+                                    <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
+                                    <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                                </div>
                             </div>
-                            <div>
-                                <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
-                                <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
-                            </div>
-                        </div>
-                    </div> -->
+                        </div> -->
         
             </div>
         
@@ -468,33 +484,36 @@
                 </div>
         
                 <!-- <div class="movie-card">
-                        <img src="./public/images/Movies/Kai-Po-Che.png" alt="">
-                        <p class="card-year">2019</p>
-                        <div>
+                            <img src="./public/images/Movies/Kai-Po-Che.png" alt="">
+                            <p class="card-year">2019</p>
                             <div>
-                                <img class="card-imdb" src="./public/images/IMDb.png" alt="">
-                                <p class="card-imdb-rating"></p>
+                                <div>
+                                    <img class="card-imdb" src="./public/images/IMDb.png" alt="">
+                                    <p class="card-imdb-rating"></p>
+                                </div>
+                                <div>
+                                    <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
+                                    <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
+                                </div>
                             </div>
-                            <div>
-                                <a class="card-views" href=""><img src="./public/images/eye-11.svg" alt=""></a>
-                                <a class="card-heart" href=""><img src="./public/images/image-4.png" alt=""></a>
-                            </div>
-                        </div>
-                    </div> -->
+                        </div> -->
         
             </div>
-        
-            <button>show more</button>
+            <div class="flex justify-around">
+                <button>show more</button>
+            </div>
+
         </section>
     </main>
+    
     
     
 
 
     <footer>
-        <div class="flex justify-around">
+        <div class="container flex justify-around">
             <div class="language">
-                <button><i></i> English <i></i></button>
+                <button><i class="fa-solid fa-globe"></i> English <i class="fa-sharp fa-solid fa-angle-down"></i></button>
             </div>
             <div class="navigation">
                 <h4>Navigation</h4>
@@ -519,14 +538,16 @@
             </div>
             <div class="follow">
                 <h4>Follow Us</h4>
-                <div>
-                    <i></i>
-                    <i></i>
-                    <i></i>
+                <div class="flex justify-between">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-twitter"></i>
                 </div>
             </div>
         </div>
-        <p>© 2023 Pedram Mollarafie. All Rights Reserved.</p>
+        <div class="footer-bottom flex justify-around">
+            <p>© 2023 Pedram Mollarafie. All Rights Reserved.</p>
+        </div>
     </footer>
 </body>
 </html>

@@ -69,6 +69,8 @@ input {
 button {
   border-radius: 30px;
   height: 50px;
+  text-transform: uppercase;
+  border: none;
 }
 
 input:focus {
@@ -97,14 +99,18 @@ main {
   margin-right: 80px;
 }
 
-section .hero-section {
-  background-image: url(./public/images/movie-wallpaper.png);
+.hero-section {
+  background: linear-gradient(90deg, #000 17.76%, rgba(0, 0, 0, 0.69) 41.44%, rgba(196, 196, 196, 0) 100%);
+  background-image: url(./public/images/Tamasha-main.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: right;
   background-blend-mode: multiply;
   height: 900px;
-  background: linear-gradient(90deg, #000 17.76%, rgba(0, 0, 0, 0.69) 41.44%, rgba(196, 196, 196, 0) 100%);
+}
+
+.float {
+  display: float;
 }
 
 footer {
