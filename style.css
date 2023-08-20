@@ -30,6 +30,20 @@ h1 {
   margin: 0 20px;
 }
 
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+ul {
+  margin-right: 10vw;
+}
+
 li {
   color: #A1B1CB;
   font-size: 16px;
@@ -37,11 +51,11 @@ li {
   font-weight: 700;
   line-height: normal;
   align-items: center;
+  text-transform: uppercase;
 }
 
-button {
-  border-radius: 30px;
-  height: 50px;
+li.on-page {
+  color: white;
 }
 
 input {
@@ -52,6 +66,19 @@ input {
   flex-shrink: 0;
 }
 
+button {
+  border-radius: 30px;
+  height: 50px;
+}
+
+input:focus {
+  outline: none;
+}
+
+form:focus-within {
+  outline: 1px;
+}
+
 .side-bar {
   width: 75px;
   height: 315px;
@@ -60,6 +87,7 @@ input {
   background: linear-gradient(48deg, #130B29 0%, #5436A9 100%, #5E47A1 100%);
   position: sticky;
   flex-direction: column;
+  flex-wrap: wrap;
   margin-top: 40px;
   margin-right: 40px;
 }
@@ -70,11 +98,13 @@ main {
 }
 
 section .hero-section {
-  background-image: url(/public/images/movie-wallpaper.png);
+  background-image: url(./public/images/movie-wallpaper.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 907px;
+  background-blend-mode: multiply;
+  height: 900px;
+  background: linear-gradient(90deg, #000 17.76%, rgba(0, 0, 0, 0.69) 41.44%, rgba(196, 196, 196, 0) 100%);
 }
 
 footer {
