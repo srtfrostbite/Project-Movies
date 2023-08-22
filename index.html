@@ -30,13 +30,13 @@
 <body>
 
     <!-- <header class=""> -->
-        <nav class="flex flex-no-wrap w-full h-24 items-center justify-between p-x-20 fixed top-0">
+        <nav class="flex flex-no-wrap w-full h-24 z-50 items-center justify-between space-x-32 fixed top-0 bg-gradient-to-r from-black to-[#5E47A1]/75 uppercase">
             <!-- <div class="flex  flex-wrap basis-1/2 justify-around"> -->
                 <!-- <h1 class="">dramatic</h1> -->
                 <ul class="flex flex-wrap justify-around basis-1/2 items-center">
-                    <li><h1 class="text-4xl">dramatic</h1></li>
+                    <li><h1 class="text-4xl font-['Griffy'] text-[#FFC907] antialiased ">dramatic</h1></li>
                     <li class="on-page text-xl">
-                        <span>Home</span>
+                        <span class="font-semibold">Home</span>
                         <img class="absolute px-7" src="./public/images/on-page-circle.svg" alt="">
                     </li>
                     <li><a href="">tv show</a></li>
@@ -44,9 +44,9 @@
                     <li><a href="">news</a></li>
                 </ul>
             <!-- </div> -->
-            <div class="flex flex-wrap justify-around basis-1/2 items-center">
-                <form action="" class="flex align-center">
-                    <input class="flex-grow text-base items-center placeholder:pl-4" type="search" placeholder="SEARCH">
+            <div class="flex flex-wrap justify-around space-x-24 basis-1/2 items-center pr-16">
+                <form action="" class="flex flex-grow align-center">
+                    <input class="flex-grow w-full text-base items-center placeholder:pl-4 rounded-full bg-[#3B567D] py-1" type="search" placeholder="SEARCH">
                     <button class="items-center float-left -ms-8" title="search" type="submit"><i class="fa-solid fa-magnifying-glass text-xl"></i></button>
                     <!-- <input class="fa fa-search" type="submit"> -->
                 </form>
@@ -69,12 +69,10 @@
 
 
 
-
-
-
-
-    <main class="flex items-center flex-no-wrap justify-between top-0">
-        <nav class="side-bar flex flex-col justify-around items-center sticky left-0 top-0">
+    <main class="flex flex-no-wrap p-0 top-0 space-x-12">
+        
+        <!-- side-bar -->
+        <nav class="side-bar flex flex-col justify-around items-center sticky left-0 top-32 py-4 text-2xl bg-gradient-to-bl from-[#5E47A1] via-[#5436A9] to-black w-[80px] h-96 rounded-r-3xl">
             <!-- <a href=""><img src="./public/images/users-1.svg" alt=""></a> -->
             <a href=""><i class="fa-solid fa-user-group"></i></a>
             <!-- <a href=""><img src="./public/images/list-11.svg" alt=""></a> -->
@@ -84,38 +82,51 @@
             <!-- <a href=""><img src="./public/images/settings-1.svg" alt=""></a> -->
             <a href=""><i class="fa-solid fa-gear"></i></a>
         </nav>
-        <div class="sections">
-            <section class="hero-section">
-                <img class="movie-title" src="./public/images/Tamasha.png" alt="Tamash title">
-                <p class="movie-description">
+        
+
+
+        <div class="sections flex-grow">
+            <section class="hero-section w-full h-screen z-10 relative block bg-[url('./public/images/Tamasha-main.png')] bg-[length:2000px_1000px] bg-no-repeat bg-[top_left_10rem] z-10 before:content[''] before:absolute before:inset-0 before:block before:bg-gradient-to-r before:from-black before:to-transparent before:opacity-100 before:z-[-5] before:ml-24">
+                <img class="movie-title pt-32 pb-12 w-1/3" src="./public/images/Tamasha.png" alt="Tamash title">
+                <p class="movie-description w-1/2">
                     Ved and Tara fall in love while on a holiday in Corsica and decide to keep their real identities undisclosed.
                     Tara
                     returns to Delhi and meets a new Ved, who is trying to discover his true self.
                 </p>
-                <p class="genres-title">genres</p>
-                <p class="genres">Romance, Drama</p>
-                <div class="hero-buttons flex">
-                    <button>watch <i class="fa-solid fa-play"></i></button>
-                    <button>my list <i class="fa-solid fa-plus"></i></button>
+                <div class="genres py-6 text-xl font-semibold">
+                     <p class="genres-title text-red-500 uppercase">genres</p>
+                    <p class="genres capitalize">Romance, Drama</p>
                 </div>
-                <div class="hero-features flex">
+
+                <div class="hero-buttons flex flex-no-wrap text-xl space-x-5 pb-6">
+                    <button class="flex px-6 py-3 items-center bg-violet-800 space-x-4 rounded-full">
+                        <p class="uppercase">watch</p>
+                        <i class="fa-solid fa-play"></i></button>
+                    <button class="flex px-6 py-3 items-center bg-gray-600 space-x-4 rounded-full">
+                        <p class="uppercase">my list</p>
+                        <i class="fa-solid fa-plus"></i></button>
+                </div>
+                <div class="hero-features flex space-x-3 items-center">
                     <img src="./public/images/IMDb.png" alt="">
-                    <p class="main-IMDb-score">7.3</p>
-                    <p class="main-age-rating">U/A</p>
-                    <p class="resolution">4K</p>
-                    <p class="year">2015</p>
+                    <p class="main-IMDb-score text-xl text-yellow-500 font-semibold">7.3</p>
+                    <p class="main-age-rating border rounded-md px-1">U/A</p>
+                    <p class="resolution border rounded-md px-1">4K</p>
+                    <p class="year text-xl text-gray-500 font-semibold">2015</p>
                 </div>
+                
             
             </section>
             
             
-            <section class="must-watch">
+            <section class="must-watch rounded-3xl bg-black bg-opacity-50 -mt-20 z-[100]">
                 <div class="flex justify-between">
                     <h3>Movies you must watch</h3>
-                    <button>filters <i class="fa-solid fa-angle-down"></i></button>
+                    <button class="flex px-6 py-2 pitems-center bg-gray-600 space-x-4 rounded-full items-center">
+                        <p class="uppercase ">filters</p>
+                        <i class="fa-solid fa-angle-down"></i></button>
                 </div>
             
-                <div class="movie-list flex align-center justify-between">
+                <div class="movie-list flex align-center justify-between z-20">
                     <div class="movie-card">
                         <img src="./public/images/Movies/Kumbalangi-Nights.png" alt="">
                         <h4 class="card-title">Kumbalangi-Nights</h4>
