@@ -59,14 +59,6 @@ const movieLists = {
       favorite: true,
       viewed: false,
     },
-    // {
-    //     id: 'movie-uuid-7',
-    //     movie_name: 'Kai Po Che',
-    //     year: 2013,
-    //     score: 7.9,
-    //     favorite: false,
-    //     viewed: false,
-    // },
   ],
 
   recommended: [
@@ -118,14 +110,6 @@ const movieLists = {
       favorite: false,
       viewed: false,
     },
-    // {
-    //     id: 'movie-uuid-7',
-    //     movie_name: 'Kai Po Che',
-    //     year: 2013,
-    //     score: 7.9,
-    //     favorite: false,
-    //     viewed: false,
-    // },
   ],
 
   classics: [
@@ -175,49 +159,6 @@ const movieLists = {
       year: 2010,
       score: 8.0,
       favorite: true,
-      viewed: false,
-    },
-    // {
-    //     id: 'movie-uuid-7',
-    //     movie_name: 'Kai Po Che',
-    //     year: 2013,
-    //     score: 7.9,
-    //     favorite: false,
-    //     viewed: false,
-    // },
-  ],
-
-  similar: [
-    {
-      id: "movie-uuid-6",
-      movie_name: "Masaan",
-      year: 2015,
-      score: 8.1,
-      favorite: true,
-      viewed: false,
-    },
-    {
-      id: "movie-uuid-20",
-      movie_name: "Dil Dhadakne do",
-      year: 2004,
-      score: 8.2,
-      favorite: true,
-      viewed: false,
-    },
-    {
-      id: "movie-uuid-21",
-      movie_name: "Aligarh",
-      year: 2018,
-      score: 8.2,
-      favorite: true,
-      viewed: false,
-    },
-    {
-      id: "movie-uuid-22",
-      movie_name: "Karwaan",
-      year: 2021,
-      score: 8.8,
-      favorite: false,
       viewed: false,
     },
   ],
@@ -272,14 +213,6 @@ const mustwatch = [
     favorite: true,
     viewed: false,
   },
-  // {
-  //     id: 'movie-uuid-7',
-  //     movie_name: 'Kai Po Che',
-  //     year: 2013,
-  //     score: 7.9,
-  //     favorite: false,
-  //     viewed: false,
-  // },
 ];
 
 const recommended = [
@@ -331,14 +264,6 @@ const recommended = [
     favorite: false,
     viewed: false,
   },
-  // {
-  //     id: 'movie-uuid-7',
-  //     movie_name: 'Kai Po Che',
-  //     year: 2013,
-  //     score: 7.9,
-  //     favorite: false,
-  //     viewed: false,
-  // },
 ];
 
 const classics = [
@@ -388,49 +313,6 @@ const classics = [
     year: 2010,
     score: 8.0,
     favorite: true,
-    viewed: false,
-  },
-  // {
-  //     id: 'movie-uuid-7',
-  //     movie_name: 'Kai Po Che',
-  //     year: 2013,
-  //     score: 7.9,
-  //     favorite: false,
-  //     viewed: false,
-  // },
-];
-
-const similar = [
-  {
-    id: "movie-uuid-6",
-    movie_name: "Masaan",
-    year: 2015,
-    score: 8.1,
-    favorite: true,
-    viewed: false,
-  },
-  {
-    id: "movie-uuid-20",
-    movie_name: "Dil Dhadakne do",
-    year: 2004,
-    score: 8.2,
-    favorite: true,
-    viewed: false,
-  },
-  {
-    id: "movie-uuid-21",
-    movie_name: "Aligarh",
-    year: 2018,
-    score: 8.2,
-    favorite: true,
-    viewed: false,
-  },
-  {
-    id: "movie-uuid-22",
-    movie_name: "Karwaan",
-    year: 2021,
-    score: 8.8,
-    favorite: false,
     viewed: false,
   },
 ];

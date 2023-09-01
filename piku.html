@@ -183,85 +183,49 @@
         <section
           class="rounded-3xl bg-black bg-opacity-25 2xl:-mt-40 lg:-mt-4 py-4 z-40 backdrop-blur-lg"
         >
-          <div class="flex justify-left lg:space-x-52 2xl:space-x-80 pb-4">
-            <h3 class="uppercase text-lg pt-2 font-semibold">Trailer</h3>
-            <h3 class="uppercase text-lg pt-2 font-semibold">
-              Cast and crew info
-            </h3>
-          </div>
-
           <div
-            class="mustwatch movie-list flex align-center justify-between mr-4"
+            class="trailer-Crew movie-list flex justify-left mr-4 space-x-20"
           >
-            <!-- <div class="movie-card lg:w-1/6 md:w-1/4 sm:w-1/2 w-full rounded-lg">
-                        <img class="w-full pr-1" src="./public/images/Movies/Kumbalangi-Nights.png" alt="">
-                        <h4 class="card-title font-semibold">Kumbalangi-Nights</h4>
-                        <p class="card-year text-sm">2019</p>
-                        <div class="flex justify-between">
-                            <div class="flex items-center">
-                                <img class="card-imdb w-1/2 h-3/4 pr-2" src="./public/images/IMDb.png" alt="">
-                                <p class="card-imdb-rating text-sm">8.6</p>
-                            </div>
-                            <div class="flex">
-                                <a class="card-views pr-2" href=""><i class="fa-regular fa-eye"></i></a>
-                                <a class="card-heart pr-4" href=""><i class="fa-solid fa-heart"></i></a>
-                            </div>
-                        </div>
-                    </div> -->
-          </div>
-        </section>
+            <div class="trailer w-full">
+              <h3 class="uppercase text-lg py-2 font-semibold">Trailer</h3>
+              <div
+                class="movie-trailer w-full flex justify-end items-end rounded-lg"
+              >
+                <img
+                  class="w-full pr-1 lg:rounded-lg 2xl:rounded-xl rounded"
+                  src="./public/images/Piku/Piku-trailer/Piku-trailer.png"
+                  alt=""
+                />
+                <a
+                  class="play-trailer lg:pl-4 lg:text-xl lg:pr-3 lg:py-2 lg:mb-2 lg:mr-4 2xl:text-4xl 2xl:pl-6 2xl:pr-5 2xl:py-4 2xl:mb-3 2xl:mr-6 bg-white text-violet-800 rounded-full fixed"
+                  href=""
+                  ><i class="fa-solid fa-play"></i
+                ></a>
+              </div>
+            </div>
 
-        <!-- **************************************** RECOMMENDED **************************************** -->
-        <section class="pt-8">
-          <h3 class="uppercase text-xl pt-2">recomended for you</h3>
-          <div class="flex justify-left pt-4 uppercase">
-            <button
-              class="flex px-6 py-2 pitems-center bg-red-600 space-x-4 rounded-full items-center mr-6 mb-6 capitalize"
-            >
-              hindi
-            </button>
-            <button
-              class="flex px-6 py-2 pitems-center bg-gray-600 space-x-4 rounded-full items-center mr-6 mb-6 capitalize"
-            >
-              bengali
-            </button>
-            <button
-              class="flex px-6 py-2 pitems-center bg-gray-600 space-x-4 rounded-full items-center mr-6 mb-6 capitalize"
-            >
-              marathi
-            </button>
-            <button
-              class="flex px-6 py-2 pitems-center bg-gray-600 space-x-4 rounded-full items-center mr-6 mb-6 capitalize"
-            >
-              assamese
-            </button>
-            <button
-              class="flex px-6 py-2 pitems-center bg-gray-600 space-x-4 rounded-full items-center mr-6 mb-6 capitalize"
-            >
-              telugu
-            </button>
-            <button
-              class="flex px-6 py-2 pitems-center bg-red-600 space-x-4 rounded-full items-center mr-6 mb-6 capitalize"
-            >
-              tamil
-            </button>
-            <button
-              class="flex px-6 py-2 pitems-center bg-gray-600 space-x-4 rounded-full items-center mr-6 mb-6 capitalize"
-            >
-              malayalam
-            </button>
+            <div class="cast-crew">
+              <h3 class="uppercase text-lg py-2 font-semibold">
+                Cast and crew info
+              </h3>
+              <div
+                class="cast-list flex align-center justify-between w-full space-x-12"
+              >
+                <!-- <div class="cast-card w-1/4">
+                  <img
+                    class="w-10/12 aspect-[3/4] 2xl:rounded-xl rounded-lg border"
+                    src="./public/images/Piku/Piku-cast/Shoojit-Sircar.png"
+                    alt=""
+                  />
+                  <h4 class="cast-name pt-2 text-sm font-semibold">
+                    Shoojit Sircar
+                  </h4>
+                  <p class="cast-role text-sm text-slate-700">Director</p>
+                </div> -->
+              </div>
+            </div>
           </div>
 
-          <div
-            class="recommended movie-list flex align-center justify-between mr-4"
-          ></div>
-
-          <!-- **************************************** CLASSICS **************************************** -->
-          <h3 class="uppercase text-xl pt-2 py-8">bollywood classics</h3>
-
-          <div
-            class="classics movie-list flex align-center justify-between mr-4"
-          ></div>
           <div class="flex justify-around py-8">
             <button
               class="flex px-6 py-2 items-center bg-violet-800 text-white space-x-2 rounded-full mr-6 mb-6 capitalize font-semibold"
@@ -269,6 +233,26 @@
               <p>show more</p>
               <i class="fa-sharp fa-solid fa-angle-down"></i>
             </button>
+          </div>
+        </section>
+
+        <!-- **************************************** SIMILAR **************************************** -->
+        <section class="pt-2 pb-8">
+          <div>
+            <h3 class="uppercase text-lg font-semibold pt-4 pb-2">
+              More like this
+            </h3>
+            <div
+              class="simliar-movies movie-list flex align-center space-x-8 justify-between mr-4"
+            >
+              <!-- <div class="movie-card md:w-1/4 sm:w-1/2 w-full rounded-lg">
+                <img
+                  class="w-full pr-1"
+                  src="./public/images/Piku/Piku-more-movies/${movieNameURL}.png"
+                  alt="${cardObject.movie_name}"
+                />
+              </div> -->
+            </div>
           </div>
         </section>
       </div>
@@ -326,7 +310,7 @@
         <p>© 2023 Pedram Mollarafie. All Rights Reserved.</p>
       </div>
     </footer>
-    <script src="./index.js"></script>
+    <script src="./piku.js"></script>
   </body>
 </html>
 
