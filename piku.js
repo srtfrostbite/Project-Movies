@@ -153,7 +153,7 @@ function renderCast(castObject) {
             <h4 class="cast-name pt-2 text-sm font-semibold">
                 ${castObject.cast_name}
             </h4>
-            <p class="cast-role text-sm text-slate-700">${castObject.cast_role}</p>
+            <p class="cast-role text-sm text-slate-400 font-semibold">${castObject.cast_role}</p>
         </div>`;
 }
 
